@@ -1,0 +1,20 @@
+/*! \page page_spbusage Signal processing block documentation usage
+
+\section Introduction
+
+In this page we describe the usage of signal processing blocks in Python level. 
+
+\section Blocks
+
+<b> sig_source_f(double sampling_freq, gr_waveform_t waveform, double wave_freq, double ampl, float offset = 0) </b>
+
+Generate float samples according to <b> sampling_freq</b> of a signal specified in <b> waveform </b> with frequency <b> wave_freq </b> and <b> amplitude </b>.
+
+<b> waveform:</b> Constant, Sine, Cosine, Square, Triangle and Saw Tooth.
+
+\code
+   src = sig_source_f(44100, Sin, 5000, 2, 0)
+\endcode
+
+In this example <b> src </b> is a sinewave source with sampling frequency 44100, frequency 5000Hz, aplitude 2 and zero offset.
+*/
